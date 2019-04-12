@@ -1,0 +1,6 @@
+framework module Pods_Download2Go {
+  umbrella header "Pods-Download2Go-umbrella.h"
+
+  export *
+  module * { export * }
+}
