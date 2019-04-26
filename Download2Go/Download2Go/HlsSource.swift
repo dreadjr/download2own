@@ -10,7 +10,7 @@ import UIKit
 import Realm
 import RealmSwift
 
-class HLSSource: Object {
+class HlsSource: Object {
 
     @objc dynamic var src: String = ""
     @objc dynamic var offlineSrc: String?

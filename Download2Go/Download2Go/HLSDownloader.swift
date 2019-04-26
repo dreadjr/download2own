@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import BitmovinPlayer
 
 class HLSDownloader: NSObject {
     
@@ -19,7 +20,7 @@ class HLSDownloader: NSObject {
     var didFinishDownloading: ((_ destinationLocation: URL) -> Void)?
     var downloadProgressChanged: ((_ progress: Double) -> Void)?
     var urlString: String = ""
-    var source: HLSSource?
+    var source: HlsSource?
     var dbManager: DBManager = DBManager(withUsername: "binhnt", password: "abc")
     
     override init() {
@@ -28,14 +29,21 @@ class HLSDownloader: NSObject {
     
     convenience init(withUrl urlString: String) {
         self.init()
+        
         self.urlString = urlString
-        if let source = self.dbManager.get(type: HLSSource.self, predicate: NSPredicate(format: "src = %@", urlString)) {
+        if let source = self.dbManager.get(type: HlsSource.self, predicate: NSPredicate(format: "src = %@", urlString)) {
             self.source = source
         } else {
-            self.source = HLSSource()
+            self.source = HlsSource()
             self.source?.src = urlString
             self.dbManager.save(self.source!)
         }
+//        if let url = URL(string: self.source?.src ?? "") {
+//            let sourceItem = SourceItem(url: url)
+//            let drmConfig = FairplayConfiguration(license: URL(string: "")!, certificateURL: URL(string: "")!)
+//            sourceItem?.add(drmConfiguration: drmConfig)
+//        }
+        
     }
     
     func download() {

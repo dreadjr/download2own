@@ -49,6 +49,14 @@ class DBManager: NSObject {
         return obj?.first
     }
     
+    func get<T: Object>(type: T.Type, predicate: NSPredicate? = nil) -> Results<T>? {
+        let obj = self.realm?.objects(type)
+        if let predicate = predicate {
+            return obj?.filter(predicate)
+        }
+        return obj
+    }
+    
     func get<T: Object>(type: T.Type, block: ((T) -> Bool)?) -> T? {
         let pred = NSPredicate (block: { (obj, bindings) -> Bool in
             if let obj = obj as? T {

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B77DC4822715F060012F700 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B77DC4622715F060012F700 /* Reachability.m */; };
+		0B77DC4A22716B440012F700 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77DC4922716B440012F700 /* PlaybackViewController.swift */; };
 		0B88B0F4225CA08E0066214C /* HLSDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88B0F3225CA08E0066214C /* HLSDownloader.swift */; };
-		0B88B0F7225F31100066214C /* HLSSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88B0F6225F31100066214C /* HLSSource.swift */; };
+		0B88B0F7225F31100066214C /* HlsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88B0F6225F31100066214C /* HlsSource.swift */; };
 		0B88B0F9225F32EB0066214C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88B0F8225F32EB0066214C /* DBManager.swift */; };
+		0BA21AEF226EF1B500E75DB0 /* BitmovinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA21AEE226EF1B400E75DB0 /* BitmovinViewController.swift */; };
+		0BA21AF1226EF82A00E75DB0 /* StreamDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA21AF0226EF82A00E75DB0 /* StreamDownloader.swift */; };
+		0BA21AF3226EF8D300E75DB0 /* BitmovinDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA21AF2226EF8D300E75DB0 /* BitmovinDownloader.swift */; };
 		0BF95FDB225A059900AE8D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF95FDA225A059900AE8D7F /* AppDelegate.swift */; };
 		0BF95FDD225A059900AE8D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF95FDC225A059900AE8D7F /* ViewController.swift */; };
 		0BF95FE0225A059900AE8D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF95FDE225A059900AE8D7F /* Main.storyboard */; };
@@ -19,9 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B77DC4522715F050012F700 /* Download2Go-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Download2Go-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B77DC4622715F060012F700 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0B77DC4722715F060012F700 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0B77DC4922716B440012F700 /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
 		0B88B0F3225CA08E0066214C /* HLSDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLSDownloader.swift; sourceTree = "<group>"; };
-		0B88B0F6225F31100066214C /* HLSSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSSource.swift; sourceTree = "<group>"; };
+		0B88B0F6225F31100066214C /* HlsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlsSource.swift; sourceTree = "<group>"; };
 		0B88B0F8225F32EB0066214C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		0BA21AEE226EF1B400E75DB0 /* BitmovinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmovinViewController.swift; sourceTree = "<group>"; };
+		0BA21AF0226EF82A00E75DB0 /* StreamDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamDownloader.swift; sourceTree = "<group>"; };
+		0BA21AF2226EF8D300E75DB0 /* BitmovinDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmovinDownloader.swift; sourceTree = "<group>"; };
 		0BF95FD7225A059900AE8D7F /* Download2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Download2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF95FDA225A059900AE8D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF95FDC225A059900AE8D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +79,9 @@
 		0BF95FD9225A059900AE8D7F /* Download2Go */ = {
 			isa = PBXGroup;
 			children = (
+				0B77DC4722715F060012F700 /* Reachability.h */,
+				0B77DC4622715F060012F700 /* Reachability.m */,
+				0BA21AEE226EF1B400E75DB0 /* BitmovinViewController.swift */,
 				0B88B0F3225CA08E0066214C /* HLSDownloader.swift */,
 				0BF95FDA225A059900AE8D7F /* AppDelegate.swift */,
 				0BF95FDC225A059900AE8D7F /* ViewController.swift */,
@@ -74,8 +89,12 @@
 				0BF95FE1225A059B00AE8D7F /* Assets.xcassets */,
 				0BF95FE3225A059B00AE8D7F /* LaunchScreen.storyboard */,
 				0BF95FE6225A059B00AE8D7F /* Info.plist */,
-				0B88B0F6225F31100066214C /* HLSSource.swift */,
+				0B88B0F6225F31100066214C /* HlsSource.swift */,
 				0B88B0F8225F32EB0066214C /* DBManager.swift */,
+				0BA21AF0226EF82A00E75DB0 /* StreamDownloader.swift */,
+				0BA21AF2226EF8D300E75DB0 /* BitmovinDownloader.swift */,
+				0B77DC4522715F050012F700 /* Download2Go-Bridging-Header.h */,
+				0B77DC4922716B440012F700 /* PlaybackViewController.swift */,
 			);
 			path = Download2Go;
 			sourceTree = "<group>";
@@ -131,6 +150,7 @@
 				TargetAttributes = {
 					0BF95FD6225A059900AE8D7F = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -197,6 +217,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Download2Go/Pods-Download2Go-frameworks.sh",
+				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -204,6 +225,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -219,10 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA21AEF226EF1B500E75DB0 /* BitmovinViewController.swift in Sources */,
+				0B77DC4A22716B440012F700 /* PlaybackViewController.swift in Sources */,
+				0BA21AF1226EF82A00E75DB0 /* StreamDownloader.swift in Sources */,
+				0BA21AF3226EF8D300E75DB0 /* BitmovinDownloader.swift in Sources */,
 				0B88B0F9225F32EB0066214C /* DBManager.swift in Sources */,
 				0BF95FDD225A059900AE8D7F /* ViewController.swift in Sources */,
 				0BF95FDB225A059900AE8D7F /* AppDelegate.swift in Sources */,
-				0B88B0F7225F31100066214C /* HLSSource.swift in Sources */,
+				0B88B0F7225F31100066214C /* HlsSource.swift in Sources */,
+				0B77DC4822715F060012F700 /* Reachability.m in Sources */,
 				0B88B0F4225CA08E0066214C /* HLSDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +397,7 @@
 			baseConfigurationReference = 531B45A2C6A55C5EC9496C7B /* Pods-Download2Go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NW5H8FD7V6;
 				INFOPLIST_FILE = Download2Go/Info.plist;
@@ -380,6 +408,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binhnt.Download2Go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Download2Go/Download2Go-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +420,7 @@
 			baseConfigurationReference = F3BEB0CC8DF03F839B87FAD2 /* Pods-Download2Go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NW5H8FD7V6;
 				INFOPLIST_FILE = Download2Go/Info.plist;
@@ -400,6 +431,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binhnt.Download2Go;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Download2Go/Download2Go-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

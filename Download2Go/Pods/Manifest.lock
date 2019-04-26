@@ -1,4 +1,5 @@
 PODS:
+  - BitmovinPlayer (2.24.0)
   - Realm (3.14.1):
     - Realm/Headers (= 3.14.1)
   - Realm/Headers (3.14.1)
@@ -6,6 +7,7 @@ PODS:
     - Realm (= 3.14.1)
 
 DEPENDENCIES:
+  - BitmovinPlayer (from `https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git`, tag `2.24.0`)
   - RealmSwift
 
 SPEC REPOS:
@@ -13,10 +15,21 @@ SPEC REPOS:
     - Realm
     - RealmSwift
 
+EXTERNAL SOURCES:
+  BitmovinPlayer:
+    :git: https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git
+    :tag: 2.24.0
+
+CHECKOUT OPTIONS:
+  BitmovinPlayer:
+    :git: https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git
+    :tag: 2.24.0
+
 SPEC CHECKSUMS:
+  BitmovinPlayer: 32500bb5b43233f4f9e7cc866aabe6a08a579486
   Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
   RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
 
-PODFILE CHECKSUM: 3427f43ec9e3548d569896d1d2c5c05936e17c83
+PODFILE CHECKSUM: 949e37d97d51b44ec6b1ff526fffe3c643f841d6
 
 COCOAPODS: 1.6.1

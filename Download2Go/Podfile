@@ -7,5 +7,6 @@ target 'Download2Go' do
 
   # Pods for Download2Go
 pod 'RealmSwift'
+pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.24.0'
 
 end
